@@ -1,4 +1,6 @@
 function translate(name, prefix = true) {
+  name = name.toLowerCase();
+
   const specialChars = new Map([
     ["#", "-sharp-"],
     ["+", "-plus-"],
