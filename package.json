@@ -1,6 +1,6 @@
 {
   "name": "@th3-s1lenc3/gh-colors",
-  "version": "1.0.4-beta",
+  "version": "1.0.5-beta",
   "description": "Provides JS & CSS classes for obtaining the color GitHub assigns to a language.",
   "main": "dist/js/index.js",
   "devDependencies": {
@@ -13,7 +13,7 @@
     "start": "npm-run-all update-dataset build-gh-colors-map css-compile",
     "update-dataset": "node build/update-dataset.js",
     "build-gh-colors-map": "npm-run-all build-gh-colors-map:*",
-    "build-gh-colors-map:build": "json-to-scss dist/json/theme.min.json dist/scss/gh-colors-map.scss --k=\"dq\" --v=\"dq\" --no-underscore",
+    "build-gh-colors-map:build": "json-to-scss dist/json/dataset.min.json dist/scss/gh-colors-map.scss --k=\"dq\" --no-underscore",
     "build-gh-colors-map:mv": "mv dist/scss/gh-colors-map.scss dist/scss/_gh-colors-map.scss",
     "css-compile": "npm-run-all css-compile:*",
     "css-compile:css": "sass --style expanded --source-map --embed-sources --no-error-css dist/scss/:dist/css/",
