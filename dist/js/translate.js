@@ -1,4 +1,4 @@
-function translate(name, prefix = true) {
+function translate(name, prefix = "color") {
   name = name.toLowerCase();
 
   const specialChars = new Map([
@@ -25,10 +25,18 @@ function translate(name, prefix = true) {
 
   name = name.join("");
 
-  if (prefix == true) {
+  if (prefix === "color") {
     return `gh-color-${name}`;
   }
 
+  if (prefix === "bg" | prefix === "background" || prefix === "bg-color") {
+    return `gh-bg-color-${name}`;
+  }
+
+  if (prefix != "") {
+    console.warn(`Could not understand prefix ${prefix}. Returning without prefix.`);
+  }
+  
   return name;
 }
 

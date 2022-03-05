@@ -29,11 +29,11 @@ function get(language, mode="hex") {
 }
 
 function getHex(language) {
-  return dataset[translate(language, false)];
+  return dataset[translate(language, "")];
 }
 
 function getRGB(language) {
-  const result = dataset[translate(language, false)];
+  const result = dataset[translate(language, "")];
 
   if (typeof result === "undefined") {
     throw new Error(`Unknown Language: ${language}`);

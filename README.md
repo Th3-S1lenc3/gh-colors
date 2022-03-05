@@ -9,7 +9,7 @@ Inspired by [carlos-dubon/gh-colors](https://github.com/carlos-dubon/gh-colors/)
 # Install
 
 ```sh
-$ npm install @Th3-S1lenc3/gh-colors
+$ npm install @th3-s1lenc3/gh-colors
 ```
 
 # Import
@@ -37,7 +37,7 @@ Include SCSS:
 ## JS
 
 ```js
-import { get } from "@Th3-S1lenc3/gh-colors";
+import { get } from "@th3-s1lenc3/gh-colors";
 // function get(language, mode: default = "hex") {...}
 
 const language = "coffeescript";
@@ -58,26 +58,38 @@ console.log(rgb);
 ## CSS
 
 ```html
+<!-- Text Color -->
 <!-- <span class="gh-color-{language}" /> -->
 <span class="gh-color-javascript" />
+
+<!-- Background Color -->
+<!-- <span class="gh-bg-color-{language}" /> -->
+<span class="gh-bg-color-javascript" />
 ```
 
 For languages with special characters, like c# or c++ use the translate function to translate:
 
 ```js
-import { translate } from "@Th3-S1lenc3/gh-colors";
-// function translate(name, prefix: default = true) {...}
+import { translate } from "@th3-s1lenc3/gh-colors";
+// function translate(name, prefix: default = "color") {...}
+// Prefix supports color | bg | bg-color | background
 
 const language = "c#";
-const languageClassWPrefix = translate(language);
+const languageClassWPrefix = translate(language); // Default prefix
 
 console.log(languageClassWPrefix);
 // Output: gh-color-c-sharp
 
+// For background color
+const languageClassWBgPrefix = translate(language, "bg"); // Background color prefix
+
+console.log(languageClassWPrefix);
+// Output: gh-bg-color-c-sharp
+
 // OR: without prefix
 
 const language = "c++";
-const languageClass = translate(language, false);
+const languageClass = translate(language, "");
 
 console.log(languageClass);
 // Output: c-plus-plus
