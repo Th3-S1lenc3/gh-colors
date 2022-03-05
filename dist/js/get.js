@@ -5,7 +5,8 @@ const { hexToRgb } = require('./conversion.js');
 function get(language, mode="hex") {
   let result;
 
-  mode = mode.toLowerCase()
+  language = language.toLowerCase();
+  mode = mode.toLowerCase();
 
   switch (mode) {
     case "hex":
