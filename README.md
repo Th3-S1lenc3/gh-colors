@@ -17,19 +17,19 @@ $ npm install @Th3-S1lenc3/gh-colors
 Include JS Functions:
 
 ```js
-import { get, translate } from "@Th3-S1lenc3/gh-colors";
+import { get, translate } from "@th3-s1lenc3/gh-colors";
 ```
 
 Include CSS:
 
 ```js
-import "{path_to_node_modules}/@Th3-S1lenc3/gh-colors/dist/css/gh-colors{.min}.css"
+import "{path_to_node_modules}/@th3-s1lenc3/gh-colors/dist/css/gh-colors{.min}.css"
 ```
 
 Include SCSS:
 
 ```sass
-@import "{path_to_node_modules}/@Th3-S1lenc3/gh-colors/dist/scss/gh-colors.scss"
+@import "{path_to_node_modules}/@th3-s1lenc3/gh-colors/dist/scss/gh-colors.scss"
 ```
 
 # Usage
