@@ -1,7 +1,22 @@
 {
   "name": "@th3-s1lenc3/gh-colors",
-  "version": "1.2.0-beta",
+  "version": "1.2.0",
   "description": "Provides JS & CSS classes for obtaining the color GitHub assigns to a language.",
+  "homepage": "https://github.com/Th3-S1lenc3/gh-colors#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Th3-S1lenc3/gh-colors.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Th3-S1lenc3/gh-colors/issues"
+  },
+  "keywords": [
+    "github",
+    "github-colors",
+    "css",
+    "sass",
+    "js"
+  ],
   "main": "dist/js/index.js",
   "devDependencies": {
     "axios": "^0.26.0",
@@ -20,7 +35,7 @@
     "css-compile:minify": "cleancss -O1 --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output dist/css/ --batch --batch-suffix \".min\" \"dist/css/*.css\" \"!dist/css/*.min.css\""
   },
   "author": "Th3-S1lenc3",
-  "license": "mit",
+  "license": "MIT",
   "sass": "dist/scss/gh-colors.scss",
   "style": "dist/css/gh-colors.css",
   "files": [
