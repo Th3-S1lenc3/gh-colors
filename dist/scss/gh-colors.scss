@@ -4,4 +4,8 @@
   .gh-color-#{$name} {
     color: $hex;
   }
+
+  .gh-bg-color-#{$name} {
+    background-color: $hex;
+  }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@th3-s1lenc3/gh-colors",
-  "version": "1.0.5-beta",
+  "version": "1.1.0-beta",
   "description": "Provides JS & CSS classes for obtaining the color GitHub assigns to a language.",
   "main": "dist/js/index.js",
   "devDependencies": {
