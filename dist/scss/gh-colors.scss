@@ -1,0 +1,7 @@
+@import "gh-colors-map";
+
+@each $name, $hex in $gh-colors-map {
+  .gh-color-#{$name} {
+    color: $hex;
+  }
+}
